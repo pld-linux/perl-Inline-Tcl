@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Inline
-%define		pname	Tcl
+%define		pnam	Tcl
 Summary:	Inline::Tcl Perl module
 Summary(cs):	Modul Inline::Tcl pro Perl
 Summary(da):	Perlmodul Inline::Tcl
@@ -27,7 +27,7 @@ Version:	0.09
 Release:	5
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c3f0a7852196b68a89128e54ce381f07
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Inline >= 0.40
@@ -42,7 +42,7 @@ Inline::Tcl - Write Perl subroutines in Tcl.
 Modu³ Inline::Tcl - pozwalaj±cy na pisanie procedur Perla w Tcl-u.
 
 %prep
-%setup -q -n %{pdir}-%{pname}-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 %{__perl} Makefile.PL </dev/null \
