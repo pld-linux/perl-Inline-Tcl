@@ -23,13 +23,13 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Inline::Tcl
 Summary(zh_CN):	Inline::Tcl Perl Ä£¿é
 Name:		perl-Inline-Tcl
 Version:	0.09
-Release:	2
+Release:	3
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Inline >= 0.40
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	tcl-devel >= 8.3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -43,7 +43,8 @@ Modu³ Inline::Tcl - pozwalaj±cy na pisanie procedur Perla w Tcl-u.
 %setup -q -n %{pdir}-%{pname}-%{version}
 
 %build
-%{__perl} Makefile.PL </dev/null
+%{__perl} Makefile.PL </dev/null \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 %{!?_without_tests:%{__make} test}
 
@@ -59,8 +60,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Bugs Changes README
-%{perl_sitearch}/Inline/Tcl.pm
-%dir %{perl_sitearch}/auto/Inline/Tcl
-%{perl_sitearch}/auto/Inline/Tcl/Tcl.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Inline/Tcl/Tcl.so
+%{perl_vendorarch}/Inline/Tcl.pm
+%dir %{perl_vendorarch}/auto/Inline/Tcl
+%{perl_vendorarch}/auto/Inline/Tcl/Tcl.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Inline/Tcl/Tcl.so
 %{_mandir}/man3/*
