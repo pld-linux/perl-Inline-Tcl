@@ -23,14 +23,15 @@ Summary(uk):	Модуль для Perl Inline::Tcl
 Summary(zh_CN):	Inline::Tcl Perl дё©И
 Name:		perl-Inline-Tcl
 Version:	0.09
-Release:	3
+Release:	4
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
+# Source0-md5:	c3f0a7852196b68a89128e54ce381f07
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Inline >= 0.40
 BuildRequires:	rpm-perlprov >= 4.0.2-104
-BuildRequires:	tcl-devel >= 8.3.0
+BuildRequires:	tcl-devel >= 8.3.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
