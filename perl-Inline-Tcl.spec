@@ -13,7 +13,7 @@ Summary(fr):	Module Perl Inline::Tcl
 Summary(it):	Modulo di Perl Inline::Tcl
 Summary(ja):	Inline::Tcl Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Inline::Tcl ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Inline::Tcl
+Summary(nb):	Perlmodul Inline::Tcl
 Summary(pl):	Modu³ Perla Inline::Tcl
 Summary(pt):	Módulo de Perl Inline::Tcl
 Summary(pt_BR):	Módulo Perl Inline::Tcl
