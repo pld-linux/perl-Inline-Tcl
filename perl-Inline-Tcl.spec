@@ -29,7 +29,7 @@ License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
 # Source0-md5:	c3f0a7852196b68a89128e54ce381f07
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Inline >= 0.40
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	tcl-devel >= 8.3.0
