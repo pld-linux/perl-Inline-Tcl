@@ -23,7 +23,7 @@ Summary(uk):	Модуль для Perl Inline::Tcl
 Summary(zh_CN):	Inline::Tcl Perl дё©И
 Name:		perl-Inline-Tcl
 Version:	0.09
-Release:	2
+Release:	3
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pname}-%{version}.tar.gz
