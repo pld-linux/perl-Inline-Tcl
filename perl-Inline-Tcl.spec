@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Inline
 %define		pname	Tcl
@@ -47,7 +48,8 @@ Modu³ Inline::Tcl - pozwalaj±cy na pisanie procedur Perla w Tcl-u.
 %{__perl} Makefile.PL </dev/null \
 	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
-%{!?_without_tests:%{__make} test}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
