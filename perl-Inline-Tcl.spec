@@ -6,22 +6,22 @@
 %define		pdir	Inline
 %define		pnam	Tcl
 Summary:	Inline::Tcl Perl module
-Summary(cs):	Modul Inline::Tcl pro Perl
-Summary(da):	Perlmodul Inline::Tcl
-Summary(de):	Inline::Tcl Perl Modul
-Summary(es):	MÛdulo de Perl Inline::Tcl
-Summary(fr):	Module Perl Inline::Tcl
-Summary(it):	Modulo di Perl Inline::Tcl
-Summary(ja):	Inline::Tcl Perl •‚•∏•Â°º•Î
-Summary(ko):	Inline::Tcl ∆ﬁ ∏¡Ÿ
-Summary(nb):	Perlmodul Inline::Tcl
-Summary(pl):	Modu≥ Perla Inline::Tcl
-Summary(pt):	MÛdulo de Perl Inline::Tcl
-Summary(pt_BR):	MÛdulo Perl Inline::Tcl
-Summary(ru):	Ìœƒ’Ãÿ ƒÃ— Perl Inline::Tcl
-Summary(sv):	Inline::Tcl Perlmodul
-Summary(uk):	Ìœƒ’Ãÿ ƒÃ— Perl Inline::Tcl
-Summary(zh_CN):	Inline::Tcl Perl ƒ£øÈ
+Summary(cs.UTF-8):   Modul Inline::Tcl pro Perl
+Summary(da.UTF-8):   Perlmodul Inline::Tcl
+Summary(de.UTF-8):   Inline::Tcl Perl Modul
+Summary(es.UTF-8):   M√≥dulo de Perl Inline::Tcl
+Summary(fr.UTF-8):   Module Perl Inline::Tcl
+Summary(it.UTF-8):   Modulo di Perl Inline::Tcl
+Summary(ja.UTF-8):   Inline::Tcl Perl „É¢„Ç∏„É•„Éº„É´
+Summary(ko.UTF-8):   Inline::Tcl ÌéÑ Î™®Ï§Ñ
+Summary(nb.UTF-8):   Perlmodul Inline::Tcl
+Summary(pl.UTF-8):   Modu≈Ç Perla Inline::Tcl
+Summary(pt.UTF-8):   M√≥dulo de Perl Inline::Tcl
+Summary(pt_BR.UTF-8):   M√≥dulo Perl Inline::Tcl
+Summary(ru.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl Inline::Tcl
+Summary(sv.UTF-8):   Inline::Tcl Perlmodul
+Summary(uk.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl Inline::Tcl
+Summary(zh_CN.UTF-8):   Inline::Tcl Perl Ê®°Âùó
 Name:		perl-Inline-Tcl
 Version:	0.09
 Release:	5
@@ -38,8 +38,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Inline::Tcl - Write Perl subroutines in Tcl.
 
-%description -l pl
-Modu≥ Inline::Tcl - pozwalaj±cy na pisanie procedur Perla w Tcl-u.
+%description -l pl.UTF-8
+Modu≈Ç Inline::Tcl - pozwalajƒÖcy na pisanie procedur Perla w Tcl-u.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
