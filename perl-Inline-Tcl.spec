@@ -48,6 +48,7 @@ Moduł Inline::Tcl - pozwalający na pisanie procedur Perla w Tcl-u.
 %{__perl} Makefile.PL </dev/null \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
