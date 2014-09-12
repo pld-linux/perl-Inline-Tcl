@@ -61,6 +61,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Bugs Changes README
 %{perl_vendorarch}/Inline/Tcl.pm
 %dir %{perl_vendorarch}/auto/Inline/Tcl
-%{perl_vendorarch}/auto/Inline/Tcl/Tcl.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Inline/Tcl/Tcl.so
 %{_mandir}/man3/*
