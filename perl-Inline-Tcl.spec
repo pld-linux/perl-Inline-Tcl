@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Inline
 %define		pnam	Tcl
 Summary:	Inline::Tcl - Write Perl subroutines in Tcl
